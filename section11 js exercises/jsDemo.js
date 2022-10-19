@@ -145,5 +145,6 @@ nullObj.name = "can't add something to nothing!"; //invalid, throws TypeError: n
 
 
 
-
-
+//
+// Demonstrating JS Loops
+//
