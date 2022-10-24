@@ -219,4 +219,3 @@ function addExcl(item, index, arr){
 todos.forEach(logTodos);
 todos.forEach(addExcl);
 console.log(todos);
-
