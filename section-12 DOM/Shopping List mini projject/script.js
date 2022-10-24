@@ -1,6 +1,17 @@
+var button = document.getElementById("enter");
+var input = document.getElementById("userinput");
+var ul = document.querySelector("ul");
 
 
-
+button.addEventListener("click", function(){
+	var newItem = input.value;
+	if (newItem.length > 0){
+		var li = document.createElement("li");
+		li.appendChild(document.createTextNode(newItem));
+		ul.appendChild(li);
+		input.value = "";
+	}
+})
 
 
 
