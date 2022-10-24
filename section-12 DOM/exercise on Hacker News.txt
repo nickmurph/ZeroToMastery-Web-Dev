@@ -1,0 +1,64 @@
+// playing with various DOM selectors and style modifiers via the console
+// using Hacker News instead of Google as directed for the variety/complexity
+// below pasted directly from console
+
+
+var hnTitle = document.getElementsByClassName("hnname");
+undefined
+hnTitle
+HTMLCollection { 0: b.hnname
+, length: 1 }
+
+var hnTitle = document.querySelector(".hnname");
+undefined
+hnTitle
+<b class="hnname">
+
+hnTitle.style.background = "blue";
+"blue"
+hnTitle.style.background = "";
+""
+hnTitle.innerHTML
+"<a href=\"news\">Hacker News</a>"
+hnTitle.innerHTML = "<a href=\"news\">Slacker News</a>";
+"<a href=\"news\">Slacker News</a>"
+var hnLinks = document.querySelectorAll(".title");
+undefined
+hnLinks
+NodeList(61) [ td.title, td.title, td.title, td.title, td.title, td.title, td.title, td.title, td.title, td.title
+, … ]
+
+hnLinks[0].innerText;
+"1."
+hnLinks[0].innerText = "A.";
+"A."
+hnLinks[0].parentElement;
+<tr id="33318215" class="athing">
+
+hnLinks[0].children;
+HTMLCollection { length: 0 }
+
+hnLinks[0].parentElement.children;
+HTMLCollection { 0: td.title, 1: td.votelinks, 2: td.title
+, length: 3 }
+
+var firstLinkSiblings = hnLinks[0].parentElement.children;
+undefined
+firstLinkSiblings;
+HTMLCollection { 0: td.title, 1: td.votelinks, 2: td.title
+, length: 3 }
+​
+0: <td class="title" valign="top" align="right">​
+1: <td class="votelinks" valign="top">​
+2: <td class="title">
+​
+length: 3
+​
+<prototype>: HTMLCollectionPrototype { item: item(), namedItem: namedItem(), length: Getter, … }
+
+firstLinkTitle = firstLinkSiblings[2];
+<td class="title">
+
+firstLinkTitle.innerText;
+"What’s wrong with medieval pigs in videogames (leidenmedievalistsblog.nl)"
+firstLinkTitle.innerText = "I've changed the text of this li
