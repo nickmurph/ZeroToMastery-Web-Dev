@@ -16,4 +16,8 @@ if (!students.includes("Nick")){
 
 
 // Exponentiation Operator
+const square = (x) => x**2
+const cube = (y) => y**3
 
+square(5); //evaluates to 25
+cube(3); //evaluates to 27
