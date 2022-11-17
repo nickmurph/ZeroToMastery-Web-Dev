@@ -57,3 +57,14 @@ Object.entries(obj).forEach( ([key,value]) => {
 })
 ansString = ansString.trimEnd()
 console.log(ansString)
+
+
+// Far more elegant solution in the provided answers
+Object.entries(obj).map(value => value.join(" ")).join(' ')
+
+// So, we're getting the array of entries with Object.entries(obj), each item in this array being itself an array containing K,V
+// then we use map, or applying a function to each item in an array
+// we identify each of the K,V arrays in the entries array as "value"
+// and then we call a join on each of the value/K,V arrays with a " " space argument so its "my name", not "my,name"
+// finally, we call another join(" ") on the entries array, which adds each of the joined K,V pairs together in order
+// previously unaware of the join method for arrays, which obviously makes this 10x easier. Make a note to remember it/use it
