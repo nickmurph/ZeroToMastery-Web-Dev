@@ -1,4 +1,6 @@
+//
 //String Padding
+//
 'Turtle'.padStart(10); //evaluates to "    Turtle"
 'Turtle'.padEnd(10); //evaluates to "Turtle    "
 'Turtle'.padStart(7, '_'); //evaluates to "_Turtle"
@@ -17,11 +19,33 @@ console.log("Athenaeum".padStart(10))
 
 
 //
+// Trailing Commas in Function Parameter Lists
+//
+
 
 // note the comma after the fourth parameter, d
 const fun = (a,b,c,d,) => {
 	console.log(a);
 }
-
 // note the comma after the fourth argument, 4
-fun 
+fun(1,2,3,4,)
+
+//But why? Well, when parameter lists get large, developers will often display the code as follows:
+const fun2 = (
+				a,
+				b,
+				c,
+				d,
+				) => {
+	console.log(a);
+}
+fun2(1,2,3,4,)
+
+// synctactically, its easier to read and also makes the github diff by lines easier to read
+// specifically, having the trailing comma after your last parameter means that adding future parameters
+// in future git commits will only generate a diff on the new line (rather that changing d to d, and adding e, diff'ing two lines)
+
+
+//
+//
+//
