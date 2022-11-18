@@ -84,6 +84,14 @@ Object.values(testObj).forEach(value => {
 	console.log(value)
 })
 
+//get an array of arrays, each being a K,V list
+Object.entries(testObj) 
+	//evaluates to
+		// Array(3) [ (2) […], (2) […], (2) […] ]
+		// 0: Array [ "username0", "Santa" ]
+		// 1: Array [ "username1", "Rudolph" ]
+		// 2: Array [ "username2", "Grinch" ]
+
 // Can access individual elements, because it's an array
 Object.entries(testObj)[0] // evaluates to Array [ "username0", "Santa" ]
 
