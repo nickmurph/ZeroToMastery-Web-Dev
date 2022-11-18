@@ -107,8 +107,3 @@ Object.entries(testObj).map(value =>{
 	return value[1] + value[0].replace('username', '');
 })
 
-
-
-//
-// Async and Await
-//

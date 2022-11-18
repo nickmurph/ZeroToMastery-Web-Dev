@@ -60,7 +60,7 @@ console.log(ansString)
 
 
 // Far more elegant solution in the provided answers
-Object.entries(obj).map(value => value.join(" ")).join(' ')
+ansString = Object.entries(obj).map(value => value.join(" ")).join(' ')
 
 // So, we're getting the array of entries with Object.entries(obj), each item in this array being itself an array containing K,V
 // then we use map, or applying a function to each item in an array
