@@ -13,4 +13,9 @@ const flattened = [[0, 1], [2, 3], [4, 5]].reduce(
 	}, []);
 
 
-// but instead of using just print statements, we can try the debugger
+// but instead of using print statements, we can try the debugger
+const flattened = [[0, 1], [2, 3], [4, 5]].reduce(
+	(accumulator, array) => {
+		debugger;
+		return accumulator.concat(array)
+	}, []);
