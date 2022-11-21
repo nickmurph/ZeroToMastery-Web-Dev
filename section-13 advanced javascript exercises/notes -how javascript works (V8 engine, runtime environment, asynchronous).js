@@ -6,9 +6,7 @@ setTimeout( () => {
 console.log(3);
 
 
-// CALL STACK
-
-// WEB API
+// WEB APIs
 
 // CALLBACK QUEUE
 
