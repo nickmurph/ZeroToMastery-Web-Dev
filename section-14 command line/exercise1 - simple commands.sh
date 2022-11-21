@@ -1,3 +1,5 @@
+    # this is the basic Linux cmds file provided by ZTM
+    # refer to own Linux cheatsheet for more depth/detail
     ls
     pwd
     cd 
@@ -18,3 +20,4 @@
     rm <file>
     rm -r <folder>
     say hello **(only on Mac)**
+
