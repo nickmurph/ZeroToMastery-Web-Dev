@@ -10,7 +10,7 @@ visit packagecontrol.io for Sublime Text package database
 
 VSCode
 Quokka is a js scratchpad/evaluator that you can use to quickly prototype and validate small bits of code
-	ctrl shift p, 
+	ctrl shift p, quokka new file
 Indenticator adds indicator lines for helping user see nested indentations
 
 Other VSCode extensions (not recommended by ZTM but found on own)
