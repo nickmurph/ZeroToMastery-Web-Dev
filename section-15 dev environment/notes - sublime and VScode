@@ -1,16 +1,21 @@
 Section 15 consists of a few short videos with brief overview of customizing Sublime Text and VSCode.
 
 
-Sublime Text
+Sublime Text:
 command pallette: ctrl shift p, like VSCode
 install package control, then ctrl shift p, install package, package name
 recommended packages: A File Icon, AdvancedNewFile, Babel, Material Theme, Oceanic Next Color Scheme, SideBarEnhancements
 visit packagecontrol.io for Sublime Text package database
 
 
-VSCode
+VSCode:
 Quokka is a js scratchpad/evaluator that you can use to quickly prototype and validate small bits of code
 	ctrl shift p, quokka new file
-Indenticator adds indicator lines for helping user see nested indentations
+Indenticator adds highlighting on indicator lines for helping user see nested indentations
 
-Other VSCode extensions (not recommended by ZTM but found on own)
+Other VSCode extensions (not recommended by ZTM but found on own):
+ES7+ React/Redux/React-Native snippets
+Prettier — Code formatter
+Auto Close Tag - automatically closes HTML tags like Sublime Text does
+Lorem ipsum
+ESLint - linter for bugs, whereas Prettier is a linter for formatting
