@@ -1,0 +1,1 @@
+this section mostly consists of videos introducing Git and basic commands, no exercises or advanced stuff to note
