@@ -1,1 +1,36 @@
 this section mostly consists of videos introducing Git and basic commands, no exercises or advanced stuff to note
+
+
+basic cmds covered:
+git clone <github url>
+git status
+git add <filename> 
+git add . (adds all files)
+git commit -m "commit message here"
+git push 
+git pull
+git branch (lists the branches)
+git checkout <branch name>
+git merge <branch name to merge into currently checked out branch>
+
+
+set up Bash profle to show git branch in cmd prompt:
+https://gist.github.com/justintv/168835
+https://www.quora.com/What-is-bash_profile-and-what-is-its-use
+
+
+ZTM open source playground:
+https://github.com/zero-to-mastery/
+https://github.com/orgs/zero-to-mastery/repositories
+https://github.com/zero-to-mastery/resources
+https://github.com/zero-to-mastery/javascript20-projects
+
+LinkedIn Group and Job Board:
+https://zerotomastery.io/community/?utm_source=udemy&utm_medium=coursecontent
+https://alumni-board.netlify.app/
+
+
+other:
+https://zerotomastery.io/blog/#monthly
+https://zero-to-mastery.github.io/resources/
+https://zerotomastery.io/resources
