@@ -1,0 +1,12 @@
+This section is a single video about a software developer's daily work flow
+
+
+
+Check Trello kanban
+git checkout and pull to get updated codebase, review changes
+Stand-up meeting with team/manager/Product Owner (client, in-house PM, CEO, etc)
+Pick an issue on the kanban board, check out the relevant git branch, start working
+when task is complete, submit a pull request
+If relevant at your company, pass off the PR to QA for testing
+Once approved, the PR gets approved and merged into the main branch
+Go back to the Trello board and mark the issue complete, then select a new one to work on
