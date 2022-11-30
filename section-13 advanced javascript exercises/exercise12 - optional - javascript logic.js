@@ -3,6 +3,8 @@
 // [2,2,2], 4,5,10,[20,20], 391, 392,591]. Bonus: Make it so it organizes strings differently from number types. i.e.
 // [1, "2", "3", 2] should return [[1,2],["2", "3"]]
 
+
+//ANS
 function cleanRoom(arr){
 	let refArr = arr.sort((a,b) => a - b); // [1,1,1,1,2,2,2,4,5,10,20,20,391,392,591]
 	let ansArr = [];
@@ -40,6 +42,7 @@ function cleanRoom(arr){
 // above is definitely a brute force solution (though it is time optimal at O(n)). I'm missing some method or function that should make this 
 // much easier and cleaner, if not asymptotically faster. Filter() might be it
 
+//ANS 2
 function cleanRoomBetter(arr){
 	let refArr = arr.sort((a,b) => a - b); // [1,1,1,1,2,2,2,4,5,10,20,20,391,392,591]
 	let ansArr = [];
@@ -66,11 +69,28 @@ function cleanRoomBetter(arr){
 // different numbers in the array that, when added together, give the target number. For example: answer([1,2,3], 4)should
 // return [1,3]
 
+// ANS
 // step through array
 // for each index, target num- arr[i]
 // store difference in hash map, KV as follows: Key: difference, Value: index
 // check if value at each index exists in hash map
 // if it does, you have your answer: the value at current index, and the index returned from hash map using value as a key
+function findDiffTarget(arr, targetNum){
+	let refDict = {};
+	let	ansArr = [];
+	for (let i=0; i < arr.length; i++){
+		let curNum = arr[i];
+		refDict[targetNum-curNum] = i;
+
+		if (refDict[curNum] != undefined){
+			ansArr.push(curNum);
+			ansArr.push(arr[refDict[curNum]]);
+			return ansArr;
+		}
+	}
+	return ansArr;
+}
+
 
 
 
