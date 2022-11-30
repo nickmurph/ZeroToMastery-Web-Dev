@@ -108,27 +108,46 @@ function flipHexAndRGB(input){
 // RGB to HEX
 // .toString(16); applied to a number will turn into into a Hexadecimal string
 // eg, let num = 99; num.toString(16) evaluates to 63
-
+function rgbToHex(rgb){
+	//slice off first 4 char, next 1-3 char before , are red
+	//slice between first , and next , for green
+	//slice between second, and ) for blue
+	//use .toString(16) on red, green, and blue
+	//concatenate the results and return it as as string
+}
 // HEX to RGB
 // splice the six char HEX into 3 pairs of 2 chars: RR, GG, BB
 // convert each pair from hex to base 10 num with below dict
 // eg, RR of 4f = 4 x 16 + f => 4 x 16 + 15 => 79
+function hexToRGB(hex){
+	hex = hex.toUpperCase(); //hexDict expects the a-f letters to be uppercase
+	let red = hex.slice(0,2);
+	let green = hex.slice(2,4);
+	let blue = hex.slice(4,6);
+
+	red = (hexDict[red[0]] * 16) + hexDict[red[1]];
+	green = (hexDict[green[0]] * 16) + hexDict[green[1]];
+	blue = (hexDict[blue[0]] * 16) + hexDict[blue[1]]; 
+	return `rgb(${red},${green},${blue})`;
+};
+
+
 let hexDict = {
-	1: 1;
-	2: 2;
-	3: 3;
-	4: 4;
-	5: 5;
-	6: 6;
-	7: 7;
-	8: 8;
-	9: 9;
-	a: 10;
-	b: 11;
-	c: 12;
-	d: 13;
-	e: 14;
-	f: 15;
-	0: 0;
+	1: 1,
+	2: 2,
+	3: 3,
+	4: 4,
+	5: 5,
+	6: 6,
+	7: 7,
+	8: 8,
+	9: 9,
+	A: 10,
+	B: 11,
+	C: 12,
+	D: 13,
+	E: 14,
+	F: 15,
+	0: 0,
 }
 
