@@ -99,12 +99,36 @@ function findDiffTarget(arr, targetNum){
 // enter HEX color format it returns RGB and if you enter RGB color format it returns HEX.
 
 
-//HEX format: #64C832 
-//RGB format: rgb(0,0,0)
+//HEX format: RRGGBB, ex: #64C832 is rgb(100,200,50)
+//RGB format: rgb(0,255,50)
 function flipHexAndRGB(input){
 
 }
 
+// RGB to HEX
 // .toString(16); applied to a number will turn into into a Hexadecimal string
 // eg, let num = 99; num.toString(16) evaluates to 63
+
+// HEX to RGB
+// splice the six char HEX into 3 pairs of 2 chars: RR, GG, BB
+// convert each pair from hex to base 10 num with below dict
+// eg, RR of 4f = 4 x 16 + f => 4 x 16 + 15 => 79
+let hexDict = {
+	1: 1;
+	2: 2;
+	3: 3;
+	4: 4;
+	5: 5;
+	6: 6;
+	7: 7;
+	8: 8;
+	9: 9;
+	a: 10;
+	b: 11;
+	c: 12;
+	d: 13;
+	e: 14;
+	f: 15;
+	0: 0;
+}
 
