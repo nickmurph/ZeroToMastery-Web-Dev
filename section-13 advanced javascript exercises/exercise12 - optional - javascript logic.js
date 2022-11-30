@@ -98,3 +98,13 @@ function findDiffTarget(arr, targetNum){
 // Question 3: Write a function that converts HEX to RGB. Then Make that function auto-dect the formats so that if you
 // enter HEX color format it returns RGB and if you enter RGB color format it returns HEX.
 
+
+//HEX format: #64C832 
+//RGB format: rgb(0,0,0)
+function flipHexAndRGB(input){
+
+}
+
+// .toString(16); applied to a number will turn into into a Hexadecimal string
+// eg, let num = 99; num.toString(16) evaluates to 63
+
