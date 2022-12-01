@@ -111,11 +111,16 @@ function flipHexAndRGB(input){
 // .toString(16); applied to a number will turn into into a Hexadecimal string
 // eg, let num = 99; num.toString(16) evaluates to 63
 function rgbToHex(rgb){
-	//slice off first 4 char, next 1-3 char before , are red
-	//slice between first , and next , for green
-	//slice between second, and ) for blue
-	//use .toString(16) on red, green, and blue
-	//concatenate the results and return it as as string
+	rgbArr = rgb.split(",");
+	let red = Number(rgbArr[0].slice(4,rgbArr[0].length));
+	let green = Number(rgbArr[1]);
+	let blue = Number(rgbArr[2].slice(0,rgbArr[2].length-1));
+
+	red = red.toString(16);
+	green = green.toString(16);
+	blue = blue.toString(16);
+
+	return red + green + blue;
 }
 
 
