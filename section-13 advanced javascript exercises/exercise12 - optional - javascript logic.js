@@ -61,7 +61,7 @@ function cleanRoomBetter(arr){
 	return ansArr;
 }
 
-//this second solution looks a bit cleaner and uses filter() but is asymptotically slower
+//this second solution looks cleaner and uses filter() but is asymptotically slower
 
 
 
@@ -74,7 +74,7 @@ function cleanRoomBetter(arr){
 // for each index, target num- arr[i]
 // store difference in hash map, KV as follows: Key: difference, Value: index
 // check if value at each index exists in hash map
-// if it does, you have your answer: the value at current index, and the index returned from hash map using value as a key
+// if it does, you have your answer: the value at current index, and the value at the index returned from hash map using current value as a key
 function findDiffTarget(arr, targetNum){
 	let refDict = {};
 	let	ansArr = [];
@@ -102,6 +102,8 @@ function findDiffTarget(arr, targetNum){
 //HEX format: RRGGBB, ex: #64C832 is rgb(100,200,50)
 //RGB format: rgb(0,255,50)
 function flipHexAndRGB(input){
+	//determine if input is hex or rgb
+	//call relevant helper function from below and return result
 
 }
 
@@ -115,6 +117,8 @@ function rgbToHex(rgb){
 	//use .toString(16) on red, green, and blue
 	//concatenate the results and return it as as string
 }
+
+
 // HEX to RGB
 // splice the six char HEX into 3 pairs of 2 chars: RR, GG, BB
 // convert each pair from hex to base 10 num with below dict
@@ -131,6 +135,7 @@ function hexToRGB(hex){
 	return `rgb(${red},${green},${blue})`;
 };
 
+let validHexChars = "123456789abcdef";
 
 let hexDict = {
 	1: 1,
