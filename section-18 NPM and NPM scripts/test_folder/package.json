@@ -9,6 +9,7 @@
   "author": "Jack Straw from Wichita",
   "license": "ISC",
   "dependencies": {
+    "lodash": "^4.17.21",
     "react": "^18.2.0"
   }
 }
