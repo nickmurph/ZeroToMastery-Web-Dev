@@ -3,10 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
-
 import App from './App'
-import { robots } from './Robots'
-import CardList from './CardList'
 
 
 
