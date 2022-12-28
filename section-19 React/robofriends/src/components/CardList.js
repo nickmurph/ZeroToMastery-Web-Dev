@@ -3,6 +3,12 @@ import Card from './Card'
 
 
 const CardList = ({robots}) => {
+    // uncomment this code to cause an error and trigger the Error Boundary component that CardList is a child to
+    // if (true){
+    //     throw new Error("testing Error Boundary")
+    // }
+
+    
     return (
         <div>
         {
